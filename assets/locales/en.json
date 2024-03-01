@@ -1,0 +1,20 @@
+{
+    "not-signed-in": {
+        "title": "Sign-in is required to use the extension.",
+        "sign-in": "Sign in"
+    },
+    "signed-in": {
+        "title": "Now you can use the extension.",
+        "set-shortcut": "Set shortcut"
+    },
+    "save-link": {
+        "success": {
+            "title": "Success",
+            "message": "Link has been saved successfully."
+        },
+        "failure": {
+            "title": "Failure",
+            "message": "Failed to save link."
+        }
+    }
+}
