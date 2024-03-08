@@ -17,13 +17,12 @@ export default defineConfig({
         strictMessage: false,
       }),
     ],
+    build: {
+      target: 'esnext',
+    },
   }),
   manifest: {
-    permissions: ['tabs', 'notifications', 'storage', 'management', 'contextMenus'],
-    host_permissions: [
-      "http://localhost:3001/*",
-      "https://todorist.com/*"
-    ],
+    permissions: ['tabs', 'notifications', 'contextMenus'],
     commands: {
       create_link: {
         suggested_key: {

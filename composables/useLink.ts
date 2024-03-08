@@ -1,12 +1,13 @@
-export default function() {
+import useConfig from './useConfig'
+
+export default function () {
   return {
     createLink,
   }
 }
 
 async function createLink() {
-  const management = await browser.management.get(browser.runtime.id)
-  const host = management.installType === 'development' ? 'http://localhost:3001' : 'https://todorist.com'
+  const { host } = useConfig()
 
   const tabs = await browser.tabs.query({ active: true, currentWindow: true });
   const tab = tabs[0]
